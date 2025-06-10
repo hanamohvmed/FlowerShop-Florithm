@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/kasper.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <!-- flower icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=yard" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header-change">
+        <div class="container">
+            <a href="index.html">
+                <img src="images/icon.png" alt="logo">
+                <div>Florithm</div>
+            </a>
+            <nav>
+                <i class="fa-solid fa-bars toggle-menu"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a class="active" href="wishlist.html">Wishlist</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </nav>
+            <div class="overlay"></div>
+        </div>
+    </header>
+
+    <div class="wishlist-sec">
+        <div class="main" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+            <h2>Wishlist</h2>
+            <p>By sending us a message on contact us, we will automatically recieve your wishlist!</p>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                <div class="wishlist-container">
+                    <div class="wishlist-items" id="wishlistItems">
+                    </div>
+                    <div id="emptyWishlist" class="empty-wishlist" style="display: none;">
+                        <h3>Your wishlist is empty, <a href="products.html">browse products</a> to add items.</h3>
+                    </div>
+                    <div class="contact-btn-container">
+                        <button class="contact-btn"><a href="contact.html">Contact Us</a></button>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div id="customAlert" class="custom-alert"></div>
+    
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
