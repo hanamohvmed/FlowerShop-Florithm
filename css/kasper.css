@@ -1251,6 +1251,9 @@ header nav ul{
     .subscribe p{
         display: none;
     }
+    .subscribe form input[type="email"]{
+        width: 225px !important;
+    }
 }
 
 
